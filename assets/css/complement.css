@@ -11,12 +11,14 @@
 .card-left, .card-right{
     width: 48%;
     height: 100%;
-    background-color: #4F8A8B;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-content:space-between;
-    padding: 1%;
+    border-radius: 40px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #4F8A8B;
 }
 
 .card-image{
@@ -34,4 +36,92 @@
     justify-content: center;
 }
 
+.dropdown-box{
+    width: 40%;
+}
+
+.choose-training{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose-day{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar-container{
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar{
+    width: 100%;
+    padding: 5%;
+    background-color: #F4F6FF;
+    border-radius: 40px;
+}
+
+/* The grid */
+.day-of-week,
+.date-grid {
+    display: grid;
+    gap: 10px 10px;
+    grid-template-columns: repeat(7, 1fr);
+    font-size: 25px;
+    color: #4F8A8B;
+}
+.date-grid{
+    padding-top: 30px;
+}
+
+.day-of-week{
+    background-color: rgb(227, 227, 227);
+    border-radius: 40px;
+}
+
+.day-of-week>div{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.date-grid>a{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+
+.date-grid>a:hover{
+    background-color: #FBD46D;
+    color:#4F8A8B;
+}
+
+.date-grid a:first-child {
+    grid-column: 7;
+}
+
+.blocked{
+    color:#F4F6FF;
+    background-color: rgb(227, 227, 227);
+    border-radius: 40px;
+}
+
+.blocked:hover{
+    color:#F4F6FF !important;
+    background-color: rgb(227, 227, 227) !important;
+
+}
 
