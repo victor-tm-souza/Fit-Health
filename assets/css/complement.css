@@ -40,6 +40,10 @@
     width: 40%;
 }
 
+.dropdown-box>select{
+    border-radius: 40px;
+}
+
 .choose-training{
     display: flex;
     flex-direction: column;
