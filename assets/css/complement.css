@@ -63,13 +63,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    padding: 50px;
+    background-color: #F4F6FF;
+    border-radius: 40px;
+}
+
+.calendar-container>h1>a:hover{
+    color: #FBD46D;
 }
 
 .calendar{
+    margin-top: 30px;
     width: 100%;
-    padding: 5%;
-    background-color: #F4F6FF;
-    border-radius: 40px;
 }
 
 /* The grid */
@@ -82,7 +88,7 @@
     color: #4F8A8B;
 }
 .date-grid{
-    padding-top: 30px;
+    margin-top: 30px;
 }
 
 .day-of-week{
