@@ -3374,7 +3374,7 @@ input, select, textarea {
 		cursor: default;
 		padding: 1.75em 2em;
 		position: fixed;
-		z-index: 200;
+		z-index: 100;
 		right: 2%;
 	}
 

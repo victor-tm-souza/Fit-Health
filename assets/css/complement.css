@@ -1,15 +1,15 @@
 .choosing-board{
-    height: 80vh;
+    height: 60vh;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     color: #07031A;
     margin-bottom: 5%;
     border-radius: 10px;
 }
 
-.card-left, .card-right{
-    width: 48%;
+.choosing-card-left, .choosing-card-right{
+    width: 40%;
     height: 100%;
     border-radius: 10px;
     display: flex;
@@ -21,14 +21,14 @@
     border-color: #4F8A8B;
 }
 
-.card-image{
+.choosing-card-image{
     width: 100%;
     height: 70%;
     display: flex;
     justify-content: center;
 }
 
-.card-button{
+.choosing-card-button{
     width: 100%;
     height: 30%;
     display: flex;
@@ -42,17 +42,18 @@
 
 .dropdown-box>select{
     border-radius: 40px;
+    cursor: pointer;
 }
 
-.choose-training{
+.choose-type{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.choose-day{
-    margin-top: 5%;
+.choose-day, .choose-teach{
+    margin-top: 1%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,20 +61,18 @@
 }
 
 .calendar-container{
-    width: 100%;
-    margin-top: 2%;
     margin-bottom: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    padding: 50px;
+    width: 70%;
+    padding: 2.5%;
     background-color: #F4F6FF;
     border-radius: 40px;
 }
 
-.calendar-container>h1>a:hover{
+.calendar-container>h2>a:hover{
     color: #FBD46D;
 }
 
@@ -86,7 +85,7 @@
 .day-of-week,
 .date-grid {
     display: grid;
-    gap: 10px 10px;
+    gap: 6px 6px;
     grid-template-columns: repeat(7, 1fr);
     font-size: 25px;
     color: #4F8A8B;
@@ -135,3 +134,144 @@
 
 }
 
+.return-button{
+    position: fixed;
+    top: 45%;
+    left: 30px;
+    height: 3.5vw;
+    width: 3.5vw;
+    z-index: 200;
+    background-color: #4F8A8B;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.3s;
+    
+}
+
+.return-button:hover{
+    -webkit-box-shadow: 0px 0px 19px 3px #FBD46D; 
+    box-shadow: 0px 0px 19px 3px #FBD46D;
+}
+
+.arrow {
+    position: absolute;
+    top: 35%; 
+    left: 38%; 
+    border: solid #FBD46D;
+    border-radius: 3px;
+    border-width: 0 0.4vw 0.4vw 0;
+    display: inline-block;
+    padding: 3px;
+    height: 1.2vw;
+    width: 1.2vw;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+  
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+  
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+  
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.teacher-card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.teacher-card{
+    display: flex;
+    justify-content: space-between;
+    width:95%;
+    height: 250px;
+    background-color: #F4F6FF;
+    border-radius: 40px;
+    margin-bottom: 2%;
+    animation: 0.5s;
+}
+
+.teacher-card-image{
+    width: 23%;
+    height: 100%;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    padding: 2.2%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.teacher-card-image>img{
+    height: 100%;
+    border-radius: 40px;
+}
+
+.teacher-card-content{
+    width: 77%;
+    height: 100%;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    display: flex;
+    transition: 0.5s;
+    background-color:#4F8A8B;
+}
+
+.teacher-card-description{
+    width: 100%;
+    height: 100%;
+    color: #07031A;
+    background-color:#F4F6FF;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transition: 0.5s;
+    -webkit-box-shadow: 5px 0px 15px -8px #000000; 
+    box-shadow: 5px 0px 15px -8px #000000;
+    z-index: 2;
+    padding: 2.8%;
+    display: flex;
+    flex-direction: column;
+}
+
+.teacher-card-description>h2{
+    color: #4F8A8B !important;
+}
+
+.teacher-card-description>p{
+    width: 540px;
+    height: 100%;
+    overflow: auto;    
+}
+
+.teacher-card-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.teacher-card:hover .teacher-card-description{
+    width: 70%;
+}
+
+.teacher-card:hover .teacher-card-button{
+    color: #F4F6FF;
+}
