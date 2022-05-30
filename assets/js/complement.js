@@ -39,10 +39,27 @@ function alertFunc2(clicked_id) {
                 ".\nDo you wish to proceed?"
         )
     ) {
-        
         window.location = "chat.html";
     } else {
     }
 }
 
+function openPopUp(clicked_id) {
+    document.getElementById("choice-overlay").style.display = "flex";
+    document.getElementById("teacher-name").innerHTML =
+        clicked_id + " for this day?";
+}
 
+function closePopUp() {
+    document.getElementById("choice-overlay").style.display = "none";
+}
+
+function confirmSchedule() {
+    closePopUp();
+    document.getElementById("choice-overlay-2").style.display = "flex";
+    setTimeout(redirectToMain, 2500);
+}
+
+function redirectToMain() {
+    window.location = "index.html";
+}
