@@ -30,3 +30,19 @@ function alertFunc(clicked_id) {
     } else {
     }
 }
+
+function alertFunc2(clicked_id) {
+    if (
+        confirm(
+            "Do you really want to send a message to " +
+                clicked_id +
+                ".\nDo you wish to proceed?"
+        )
+    ) {
+        
+        window.location = "chat.html";
+    } else {
+    }
+}
+
+
