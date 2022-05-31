@@ -1,0 +1,306 @@
+/* MINE */
+
+.modalityLetter {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px; 
+	text-indent: 27px;
+	color:#FBD46D;
+	padding-top: 2%;
+}
+
+/*
+.description {
+	font-family: Monospace;
+	font-size: 19px;
+	font-weight: bold;
+	color:#282725;
+	text-indent: 8px;
+}*/
+
+.flex-container-typeModalities {
+	display: flex;
+	flex-direction: column;
+	background-color: #303841;	/* DodgerBlue*/
+  }
+  
+  .flex-container-typeModalities > div {
+	background-color: #495058;	/* b6b4b4 */
+	width: 1150px;
+	margin: 9px;
+	text-indent: 50px;
+	line-height: 75px;		/* 75 */
+	font-size: 9px; 
+	border-radius: 40px;
+  }
+
+  .flex-container {
+	display: flex;
+	justify-content: space-around;
+	background-color: #495058 /*#6f7377; /*rgb(213, 224, 235);   #495058*/;
+	width: 1066px;
+	margin: 40 ;
+	/*align-items: right;*/
+  }
+  
+	.flex-container > div {
+		background-color: #cbcaca;
+		width: 330px;
+		height: 550px;
+		margin: 9px;
+		/*padding: 20px;*/
+		/*font-size: 30px;*/
+		outline: 5px solid rgb(195, 164, 13);
+		border-radius: 40px;
+	}
+
+
+	/* DropDown -- escolha da modaliade desportiva */
+
+.dropbtn {
+	background-color: #495058;
+	color: rgb(195, 164, 13);
+	padding: 4px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	border: none;
+	border-radius: 20px;
+	left: 13px;
+	}
+	  
+	  .dropdown {
+		position: relative;
+		display: inline-block;
+	  }
+	  
+	  .dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f1f1f1;
+		min-width: 200px;
+		right: 10%;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		border-radius: 20px;
+	  }
+	  
+	  .dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		border-radius: 20px;
+	  }
+	  
+	  .dropdown-content a:hover {background-color: #ddd;}
+	  
+	  .dropdown:hover .dropdown-content {display: block;}
+	  
+	  .dropdown:hover .dropbtn {background-color: rgb(119, 118, 118);} 
+
+
+.arrow {
+	border: solid rgb(255, 255, 255);
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+}
+	.down {
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+	}
+
+
+/* CSS Document */
+#headerPopup{
+	width:75%;
+	margin:0 auto;
+}
+  
+#headerPopup iframe{
+	width:100%;
+	margin:0 auto;
+}
+
+
+/** Video **/
+
+#popup {
+    position: fixed;
+    top: 83px;
+	left: 190px;
+    z-index: 100;
+    width: 1160px;
+    height:634px;
+    background-color: hsla(205, 100%, 90%, 0.3);
+    display: none;
+	border-radius: 40px;
+}
+
+#hiddenPopup {
+	position: fixed;
+	right: 190px;	/* 190 p/ grande e 350 pequeno*/
+	top: 90px;
+	color: #f7f7f7;
+	font-weight: bold;
+	font-size: 20px; 
+    z-index:200;
+}
+
+/*
+#popup {
+    position: fixed;
+    top: 83px;
+	left: 189px;
+    z-index: 100;
+    width: 1149px;
+    height:624px;
+    background-color: hsla(205, 100%, 90%, 0.3);
+    display: none;
+	border-radius: 40px;
+}
+
+#hiddenPopup {
+	position: fixed;
+	right: 210px;
+	top: 90px;
+	color: #ebf1f7;
+	font-weight: bold;
+	font-size: 20px; 
+    z-index:200;
+}
+*/
+
+/******* Scroll Back To Top Button ****/
+
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: rgb(195, 164, 13);
+	color: white;
+	cursor: pointer;
+	padding: 20px;
+	border-radius: 4px;
+	height: 80px;
+  }
+  
+  #myBtn:hover {
+	background-color: #555;
+  }
+
+  /* MINE */
+
+.modalityLetter {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px; 
+	text-indent: 22px;
+	color:#FBD46D;
+}
+
+/*
+.description {
+	font-family: Monospace;
+	font-size: 19px;
+	font-weight: bold;
+	color:#282725;
+	text-indent: 8px;
+}*/
+
+.flex-container-typeModalities {
+	display: flex;
+	flex-direction: column;
+	background-color: #303841;	/* DodgerBlue*/
+  }
+  
+  .flex-container-typeModalities > div {
+	background-color: #495058;	/* b6b4b4 */
+	width: 1150px;
+	margin: 9px;
+	text-indent: 50px;
+	line-height: 75px;
+	font-size: 9px; 
+	border-radius: 40px;
+  }
+
+  .flex-container {
+	display: flex;
+	justify-content: space-around;
+	background-color: #495058 /*#6f7377; /*rgb(213, 224, 235);*/;
+	width: 1066px;
+	margin: 40px;
+	/*align-items: right;*/
+  }
+  
+	.flex-container > div {
+		background-color: #cbcaca;
+		width: 330px;
+		height: 550px;
+		margin: 10px;
+		/*padding: 20px;*/
+		/*font-size: 30px;*/
+		outline: 5px solid rgb(195, 164, 13);
+		border-radius: 40px;
+
+	}
+
+
+	/* DropDown -- escolha da modaliade desportiva */
+
+.dropbtn {
+	background-color: #495058;
+	color: rgb(195, 164, 13);
+	padding: 4px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	border: none;
+	border-radius: 20px;
+	left: 13px;
+	}
+	  
+	  .dropdown {
+		position: relative;
+		display: inline-block;
+	  }
+	  
+	  .dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f1f1f1;
+		min-width: 200px;
+		right: 10%;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		border-radius: 20px;
+	  }
+	  
+	  .dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		border-radius: 20px;
+	  }
+	  
+	  .dropdown-content a:hover {background-color: #ddd;}
+	  
+	  .dropdown:hover .dropdown-content {display: block;}
+	  
+	  .dropdown:hover .dropbtn {background-color: rgb(119, 118, 118);} 
+
+
+.arrow {
+	border: solid rgb(255, 255, 255);
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+}
+	.down {
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+	}
+
