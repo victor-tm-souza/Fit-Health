@@ -63,3 +63,19 @@ function confirmSchedule() {
 function redirectToMain() {
     window.location = "index.html";
 }
+
+/*-----------------------------------------------------*/
+function openPopUp2(clicked_id) {
+    document.getElementById("choice-overlay").style.display = "flex";
+    document.getElementById("teacher-name").innerHTML = clicked_id + "?";
+        
+}
+
+function redirectToChat() {
+    window.location = "chat.html";
+}
+
+function confirmSchedule2() {
+    closePopUp();
+    setTimeout(redirectToChat, 500);
+}

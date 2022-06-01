@@ -7,7 +7,7 @@
 <html>
 
 <head>
-	<title>Generic - Hyperspace by HTML5 UP</title>
+	<title>Fit & Health</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -30,10 +30,26 @@
 			</ul>
 		</nav>
 	</header>
+	<div id="choice-overlay">
+		<div class="choice-popup">
+		<div class="popup-text">
+			<div>
+				Are you sure you want to send a message to <p id="teacher-name"></p>
+			</div>
+			<div class="popup-buttons">
+				<button onclick="confirmSchedule2()">Yes</button>
+				<button onclick="closePopUp()">Cancel</button>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
 
 	<!-- Wrapper -->
 	<div id="wrapper">
 
+		
 		<!-- return button -->
 		<a href="index.html" class="return-button">
 			<i class="arrow left"></i>
@@ -65,7 +81,7 @@
 										I'm more motivated than ever to help you with your training
 									</p>
 								</div>
-								<div id="Peter" class="teacher-card-button" onclick="alertFunc2(this.id)">
+								<div id="Peter" class="teacher-card-button" onclick="openPopUp2(this.id)">
 									Send message to Peter
 								</div>
 							</div>
@@ -82,7 +98,7 @@
 										I'm more motivated than ever to help you with your training
 									</p>
 								</div>
-								<div id="Sara" class="teacher-card-button" onclick="alertFunc2(this.id)">
+								<div id="Sara" class="teacher-card-button" onclick="openPopUp2(this.id)">
 									Send message to Sara
 								</div>
 							</div>
@@ -99,7 +115,7 @@
 										I'm more motivated than ever to help you with your training
 									</p>
 								</div>
-								<div id="John" class="teacher-card-button" onclick="alertFunc2(this.id)">
+								<div id="John" class="teacher-card-button" onclick="openPopUp2(this.id)">
 									Send message to John
 								</div>
 							</div>
