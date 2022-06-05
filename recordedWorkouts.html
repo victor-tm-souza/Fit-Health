@@ -848,7 +848,6 @@
 
 
 	<!-- Scripts -->
-	<script src="assets/js/complement.js"></script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
 	<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -865,9 +864,7 @@
 		function closePopupVideo() {
 			document.getElementById("popup").style.display = "none";
 		}
-	</script>
 
-	<script>
 		//Get the button
 		var mybutton = document.getElementById("myBtn");
 
@@ -877,8 +874,12 @@
 		function scrollFunction() {
 			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 				mybutton.style.display = "block";
+				document.getElementById("header").style.backgroundColor = "#303841";
+				document.getElementById("header").style.padding = "1em 2em";
 			} else {
 				mybutton.style.display = "none";
+				document.getElementById("header").style.backgroundColor = "";
+				document.getElementById("header").style.padding = "1em 2em";
 			}
 		}
 

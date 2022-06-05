@@ -17,6 +17,77 @@
 	</noscript>
 </head>
 
+<div id="choice-overlay">
+	<div class="choice-popup">
+		<div class="mini-calendar-container">
+			<h2 style="color:#4F8A8B;">
+				May 2022
+			</h2>
+			<div class="mini-calendar">
+				<div class="mini-day-of-week">
+					<div>Sun</div>
+					<div>Mon</div>
+					<div>Tue</div>
+					<div>Wed</div>
+					<div>Thu</div>
+					<div>Fri</div>
+					<div>Sat</div>
+				</div>
+				<div class="mini-date-grid">
+					<a><time datetime="2022-05-01">1</time></a>
+					<a><time datetime="2022-05-02">2</time></a>
+					<a><time datetime="2022-05-03">3</time></a>
+					<a><time datetime="2022-05-04">4</time></a>
+					<a><time datetime="2022-05-05">5</time></a>
+					<a><time datetime="2022-05-06">6</time></a>
+					<a><time datetime="2022-05-07">7</time></a>
+					<a><time datetime="2022-05-08">8</time></a>
+					<a><time datetime="2022-05-09">9</time></a>
+					<a><time datetime="2022-05-10">10</time></a>
+					<a><time datetime="2022-05-11">11</time></a>
+					<a><time datetime="2022-05-12">12</time></a>
+					<a class="mini-chosen"><time datetime="2022-05-13">13</time></a>
+					<a><time datetime="2022-05-14">14</time></a>
+					<a><time datetime="2022-05-15">15</time></a>
+					<a><time datetime="2022-05-16">16</time></a>
+					<a><time datetime="2022-05-17">17</time></a>
+					<a><time datetime="2022-05-18">18</time></a>
+					<a><time datetime="2022-05-19">19</time></a>
+					<a><time datetime="2022-05-20">20</time></a>
+					<a><time datetime="2022-05-21">21</time></a>
+					<a><time datetime="2022-05-22">22</time></a>
+					<a><time datetime="2022-05-23">23</time></a>
+					<a><time datetime="2022-05-24">24</time></a>
+					<a><time datetime="2022-05-25">25</time></a>
+					<a><time datetime="2022-05-26">26</time></a>
+					<a><time datetime="2022-05-27">27</time></a>
+					<a><time datetime="2022-05-28">28</time></a>
+					<a><time datetime="2022-05-29">29</time></a>
+					<a><time datetime="2022-05-30">30</time></a>
+					<a><time datetime="2022-05-31">31</time></a>
+				</div>
+			</div>
+		</div>
+		<div class="popup-text">
+			<div>
+				Are you sure you want to schedule a session with <p id="teacher-name"></p>
+			</div>
+			<div class="popup-buttons">
+				<button onclick="confirmSchedule()">Yes</button>
+				<button onclick="closePopUp()">Cancel</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="choice-overlay-2">
+	<div class="choice-popup-2">
+		<h2>Session successfully scheduled!</br>
+			Redirecting to home...
+		</h2>
+	</div>
+</div>
+
 <body class="is-preload">
 
 	<!-- Header -->
@@ -31,76 +102,6 @@
 		</nav>
 	</header>
 
-	<div id="choice-overlay">
-		<div class="choice-popup">
-			<div class="mini-calendar-container">
-				<h2 style="color:#4F8A8B;">
-					May 2022
-				</h2>
-				<div class="mini-calendar">
-					<div class="mini-day-of-week">
-						<div>Sun</div>
-						<div>Mon</div>
-						<div>Tue</div>
-						<div>Wed</div>
-						<div>Thu</div>
-						<div>Fri</div>
-						<div>Sat</div>
-					</div>
-					<div class="mini-date-grid">
-						<a><time datetime="2022-05-01">1</time></a>
-						<a><time datetime="2022-05-02">2</time></a>
-						<a><time datetime="2022-05-03">3</time></a>
-						<a><time datetime="2022-05-04">4</time></a>
-						<a><time datetime="2022-05-05">5</time></a>
-						<a><time datetime="2022-05-06">6</time></a>
-						<a><time datetime="2022-05-07">7</time></a>
-						<a><time datetime="2022-05-08">8</time></a>
-						<a><time datetime="2022-05-09">9</time></a>
-						<a><time datetime="2022-05-10">10</time></a>
-						<a><time datetime="2022-05-11">11</time></a>
-						<a><time datetime="2022-05-12">12</time></a>
-						<a class="mini-chosen"><time datetime="2022-05-13">13</time></a>
-						<a><time datetime="2022-05-14">14</time></a>
-						<a><time datetime="2022-05-15">15</time></a>
-						<a><time datetime="2022-05-16">16</time></a>
-						<a><time datetime="2022-05-17">17</time></a>
-						<a><time datetime="2022-05-18">18</time></a>
-						<a><time datetime="2022-05-19">19</time></a>
-						<a><time datetime="2022-05-20">20</time></a>
-						<a><time datetime="2022-05-21">21</time></a>
-						<a><time datetime="2022-05-22">22</time></a>
-						<a><time datetime="2022-05-23">23</time></a>
-						<a><time datetime="2022-05-24">24</time></a>
-						<a><time datetime="2022-05-25">25</time></a>
-						<a><time datetime="2022-05-26">26</time></a>
-						<a><time datetime="2022-05-27">27</time></a>
-						<a><time datetime="2022-05-28">28</time></a>
-						<a><time datetime="2022-05-29">29</time></a>
-						<a><time datetime="2022-05-30">30</time></a>
-						<a><time datetime="2022-05-31">31</time></a>
-					</div>
-				</div>
-			</div>
-			<div class="popup-text">
-				<div>
-					Are you sure you want to schedule a session with <p id="teacher-name"></p>
-				</div>
-				<div class="popup-buttons">
-					<button onclick="confirmSchedule()">Yes</button>
-					<button onclick="closePopUp()">Cancel</button>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="choice-overlay-2">
-		<div class="choice-popup-2">
-			<h2>Session successfully scheduled!</br>
-				Redirecting to home...
-			</h2>
-		</div>
-	</div>
 	<!-- Wrapper -->
 	<div id="wrapper">
 
@@ -116,40 +117,6 @@
 				<p align="center">
 					Day ../05/2022 or <a href="find-teach.html" style="color: #F4F6FF;">Choose another date</a>
 				</p>
-
-				<div class="choose-type">
-					<h2>Choose a time gap</h2>
-					<form class="dropdown-box">
-						<select>
-							<option>&ltTime gap&gt</option>
-							<option>8:00am to 9:00am</option>
-							<option>8:30am to 9:30am</option>
-							<option>9:00am to 10:00am</option>
-							<option>9:30am to 10:30am</option>
-							<option>10:00am to 11:00am</option>
-							<option>10:30am to 11:30am</option>
-							<option>11:00am to 12:00pm</option>
-							<option>11:30am to 12:30pm</option>
-							<option>12:00pm to 1:00pm</option>
-							<option>12:30pm to 1:30pm</option>
-							<option>1:00pm to 2:00pm</option>
-							<option>1:30pm to 2:30pm</option>
-							<option>2:00pm to 3:00pm</option>
-							<option>2:30pm to 3:30pm</option>
-							<option>3:00pm to 4:00pm</option>
-							<option>3:30pm to 4:30pm</option>
-							<option>4:00pm to 5:00pm</option>
-							<option>4:30pm to 5:30pm</option>
-							<option>5:00pm to 6:00pm</option>
-							<option>5:30pm to 6:30pm</option>
-							<option>6:00pm to 7:00pm</option>
-							<option>6:30pm to 7:30pm</option>
-							<option>7:00pm to 8:00pm</option>
-							<option>7:30pm to 8:30pm</option>
-							<option>8:00pm to 9:00pm</option>
-						</select>
-					</form>
-				</div>
 				<div class="choose-teach">
 					<h2>Available Teachers</h2>
 					<div class="teacher-card-container">
