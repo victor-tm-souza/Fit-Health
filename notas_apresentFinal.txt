@@ -1,0 +1,32 @@
+
+------------------------------------------------
+  Notas que retirei das outras apresentações:
+------------------------------------------------
+
+--> Antes dos personas dar indicação dos target users.
+
+--> Omitir os cenários e explicá-los em conjunto com as tasks ?
+
+--> Low Fidelity Prototype:
+
+	--> Mostrar o prototipo no 1º slide
+	--> Explicar os problemas que houve na avaliação de grupo do prototipo (User feedback)
+
+--> User Evaluation of the functional prototype.
+
+	--> Explicar o que tinhamos	
+	--> Explicar o que tivemos de alterar. 
+
+--> Demonstração final !!!
+
+
+-----------------------------------------------------------------------
+
+--> Colocar o nº de utilizadores que viram o nosso prototipo.
+--> A tarefas não são tão importantes, o mais importante é mostrar as imagens do prototipo e explicar as mudanças !!
+--> Não colocar muito texto. 
+
+
+--> utilizar as questões o usability scale - sus  
+
+-->  Mostrar na apresentação as tarefas logo e não gastar muito tempo com isso !! 
