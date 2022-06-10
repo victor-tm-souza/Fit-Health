@@ -316,12 +316,29 @@ input.textarea {
     left: 7px;
     width: 34px;
     height: 34px;
-    background-image: url(https://i.imgur.com/5WUpcPZ.png);
+    background-image: url(https://i.imgur.com/5WUpcPZ.png) ;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 100;
     cursor: pointer;
 }
 .emojis:active {
+    opacity: 0.9;
+}
+
+.send {
+    position: fixed;
+    display: block;
+    bottom: -4px;
+    left: 1750px;
+      
+    z-index: 100;
+    cursor: pointer;
+}
+.send img {
+    width: 34px;
+    height: 34px;
+}
+.send:active {
     opacity: 0.9;
 }
