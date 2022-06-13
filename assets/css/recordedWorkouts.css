@@ -5,7 +5,7 @@
 	font-size: 30px; 
 	text-indent: 27px;
 	color:#FBD46D;
-	padding-top: 2%;
+	padding-top: 0%;
 }
 
 /*
@@ -45,7 +45,7 @@
 	.flex-container > div {
 		background-color: #cbcaca;
 		width: 330px;
-		height: 550px;
+		height: 530px;
 		margin: 9px;
 		/*padding: 20px;*/
 		/*font-size: 30px;*/
