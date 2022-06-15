@@ -125,23 +125,23 @@
 
 #popup {
     position: fixed;
-    top: 83px;
-	left: 190px;
+    top: 95px;
+	left: 185px;
     z-index: 100;
-    width: 1160px;
-    height:634px;
-    background-color: hsla(205, 100%, 90%, 0.3);
+    width: 1170px;
+    height:610px;
+    background-color:#303841;
     display: none;
 	border-radius: 40px;
 }
 
 #hiddenPopup {
 	position: fixed;
-	right: 190px;	/* 190 p/ grande e 350 pequeno*/
-	top: 90px;
+	right: 210px;	
+	top: 105px;
 	color: #f7f7f7;
 	font-weight: bold;
-	font-size: 20px; 
+	font-size: 23px; 
     z-index:200;
 }
 
@@ -185,7 +185,8 @@
 	cursor: pointer;
 	padding: 20px;
 	border-radius: 4px;
-	height: 80px;
+	height: 50px;	/* 80 */
+	width: 60px;
   }
   
   #myBtn:hover {
