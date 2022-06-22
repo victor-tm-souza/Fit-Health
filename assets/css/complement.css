@@ -427,3 +427,25 @@
     justify-content: space-between;
 }
 
+#image-of-arrow{
+    position: fixed;
+    z-index: 100;
+    bottom: 10px;
+    right: 10px;
+    width:30px;
+    cursor: pointer;
+
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(0, 0, 0, 0.5)  !important;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(0, 0, 0, 0.5)  !important;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(0, 0, 0, 0.5) !important;
+}
