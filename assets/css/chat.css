@@ -329,8 +329,8 @@ input.textarea {
 .send {
     position: fixed;
     display: block;
-    bottom: -4px;
-    left: 1750px;
+    bottom: -2px;
+    left: 800px;
       
     z-index: 100;
     cursor: pointer;
